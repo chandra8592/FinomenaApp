@@ -228,64 +228,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                 }
 
     }
-//    private void showdialog() {
-//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-//                this);
 //
-//        alertDialogBuilder
-//                .setTitle("Game Over")
-//                .setMessage("Do you want to Restart the game?")
-//                .setCancelable(false)
-//                .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        finish();
-//
-//                    }
-//                })
-//                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        Intent startMain = new Intent(Intent.ACTION_MAIN);
-//                        startMain.addCategory(Intent.CATEGORY_HOME);
-//                        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                        startActivity(startMain);
-//                        finish();
-//                    }
-//                });
-//
-//        // create alert dialog
-//        AlertDialog alertDialog = alertDialogBuilder.create();
-//
-//        // show it
-//        alertDialog.show();
-//
-//
-//    }
-//    private void limit(){
-//
-//        int FinishTime = 10;
-//        int countDownInterval = 1000;
-//        CountDownTimer counterTimer = new CountDownTimer(FinishTime * 1000, countDownInterval) {
-//            public void onFinish() {
-//                //finish your activity here
-//                showdialog();
-//            }
-//
-//            public void onTick(long millisUntilFinished) {
-////                Toast.makeText(getApplicationContext(),"Your Turn",Toast.LENGTH_SHORT).show();
-//                final Toast toast = Toast.makeText(getApplicationContext(),  String.valueOf(millisUntilFinished/1000)+" seconde to go", Toast.LENGTH_SHORT);
-//                toast.show();
-//
-//                Handler handler = new Handler();
-//                handler.postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        toast.cancel();
-//                    }
-//                }, 1000);
-//            }
-//        };
-//        counterTimer.start();
-//    }
     private void showdialog(String data) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
