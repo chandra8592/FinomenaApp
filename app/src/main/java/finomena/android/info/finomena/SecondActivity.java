@@ -89,7 +89,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         for (int i = 0; i < count; i++) {
             indexList[i] = UNSELECTED;
         }
-        Log.i("count0",String.valueOf(touch));
 
     }
 
@@ -169,11 +168,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                     switch (maskedAction) {
 
                         case MotionEvent.ACTION_DOWN:{
-                            Log.d("TouchTest", "Touch down");
-                            Log.i("android....", "status " + indexList[position] + " size " + indexList.length);
-                            Log.i("count1",String.valueOf(touch));
+
                           if(touch<count-1) {
-                              Log.i("count",String.valueOf(touch));
+
                               if (indexList[position] == SELECTED) {
 
                                   int cur = rand.nextInt(count - 0);
@@ -188,8 +185,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                                   }
                                   indexList[cur] = SELECTED;
                                   indexList[position] = DISABLED;
-
-                                  Log.i("android....", "random no" + cur + " size " + indexList.length);
 
                                   gridview.getChildAt(cur).findViewById(R.id.image_grid).setBackgroundResource(R.drawable.border_layout);
                                   touch++;
